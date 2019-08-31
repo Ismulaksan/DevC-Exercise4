@@ -1,0 +1,162 @@
+/* Navbar */
+
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: Viga;
+    font-size: 32px
+}
+
+.nav-link {
+    text-transform: uppercase;
+    margin-right: 28px
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url("img/153150-OU5TT9-733.jpg");
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(background-image);
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: black;
+    margin-top: 150px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 b {
+    font-weight: bold;
+}
+
+/* Panel Info*/
+.panel-info {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -100px;
+    background-color: white;
+    padding: 30px;
+}
+
+.panel-info img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.panel-info h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.panel-info p {
+    font-size: 11px;
+    color: dimgray;
+    margin-top: -5px;
+    font-weight: 200px;
+}
+
+/* IOT */
+.workingspace {
+    margin-top: 80px;   
+    text-align: center; 
+}
+
+.workingspace h3 {
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 100px;  
+}
+
+.workingspace p {
+    font-size: 16px;
+    color: darkgrey;
+    margin: 20px 0;
+}
+
+/* Testimoni*/
+.testimoni {
+    margin-top: 200px;
+}
+.testimoni h4 {
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 24px;
+}
+
+/* Utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px
+}
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+
+    .navbar-brand,
+    .nav-link {
+        color: black !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 28px
+    }
+
+    .nav-link:hover {
+        border-bottom: 3px solid #0B63DC;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        margin-top: -90px;
+        height: 850px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 55px;
+    }
+
+    .workingspace {
+        text-align: left;
+    }
+    .workingspace img {
+        margin-left: 100px;
+    }
+
+    .testimoni {
+        font-size: 32px;
+    }
+
+}
